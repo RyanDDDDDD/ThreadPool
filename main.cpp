@@ -1,10 +1,11 @@
 #include <iostream>
+#include <random>
 
 #include "ThreadPool.h"
 
 int main() {
     std::cout << "=======================" << std::endl;
-    auto task = []{std::cout << "add task" << std::endl;};
+    auto task = []{std::this_thread::sleep_for(std::chrono::milliseconds((std::rand() % 10) + 1));};
 
     ThreadPool threadPool(3);
     threadPool.start();

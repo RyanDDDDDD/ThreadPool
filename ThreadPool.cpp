@@ -2,6 +2,7 @@
 // Created by user on 8/23/2024.
 //
 
+#include <iostream>
 #include "ThreadPool.h"
 
 ThreadPool::ThreadPool(uint32_t num)
@@ -53,12 +54,20 @@ void ThreadPool::run() {
             return !_stop.load(std::memory_order_acquire) || !_tasks.empty();
         });
 
-        if (_tasks.empty())
+
+        if (_tasks.empty() && _stop.load(std::memory_order_acquire))
             break;
 
+        if (_tasks.empty())
+            continue;
+
+        std::cout << std::this_thread::get_id() << " get new task" << std::endl;
         std::function<void()> task = std::move(_tasks.front());
-        task();
         _tasks.pop();
+        
+        lock.unlock();
+
+        task();
     }
 }
 
