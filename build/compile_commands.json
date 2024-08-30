@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Users/user/Desktop/ThreadPool/build",
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\"   -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/ThreadPool.dir/main.cpp.obj -c C:/Users/user/Desktop/ThreadPool/main.cpp",
+  "file": "C:/Users/user/Desktop/ThreadPool/main.cpp",
+  "output": "CMakeFiles/ThreadPool.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/user/Desktop/ThreadPool/build",
+  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\"   -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/ThreadPool.dir/ThreadPool.cpp.obj -c C:/Users/user/Desktop/ThreadPool/ThreadPool.cpp",
+  "file": "C:/Users/user/Desktop/ThreadPool/ThreadPool.cpp",
+  "output": "CMakeFiles/ThreadPool.dir/ThreadPool.cpp.obj"
+}
+]
