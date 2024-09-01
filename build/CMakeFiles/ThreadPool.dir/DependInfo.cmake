@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/user/Desktop/ThreadPool/ThreadPool.cpp" "CMakeFiles/ThreadPool.dir/ThreadPool.cpp.obj" "gcc" "CMakeFiles/ThreadPool.dir/ThreadPool.cpp.obj.d"
-  "C:/Users/user/Desktop/ThreadPool/main.cpp" "CMakeFiles/ThreadPool.dir/main.cpp.obj" "gcc" "CMakeFiles/ThreadPool.dir/main.cpp.obj.d"
+  "/Users/wuruidong/Documents/ThreadPool/ThreadPool.cpp" "CMakeFiles/ThreadPool.dir/ThreadPool.cpp.o" "gcc" "CMakeFiles/ThreadPool.dir/ThreadPool.cpp.o.d"
+  "/Users/wuruidong/Documents/ThreadPool/main.cpp" "CMakeFiles/ThreadPool.dir/main.cpp.o" "gcc" "CMakeFiles/ThreadPool.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

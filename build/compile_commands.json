@@ -1,14 +1,14 @@
 [
 {
-  "directory": "C:/Users/user/Desktop/ThreadPool/build",
-  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\"   -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/ThreadPool.dir/main.cpp.obj -c C:/Users/user/Desktop/ThreadPool/main.cpp",
-  "file": "C:/Users/user/Desktop/ThreadPool/main.cpp",
-  "output": "CMakeFiles/ThreadPool.dir/main.cpp.obj"
+  "directory": "/Users/wuruidong/Documents/ThreadPool/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o CMakeFiles/ThreadPool.dir/main.cpp.o -c /Users/wuruidong/Documents/ThreadPool/main.cpp",
+  "file": "/Users/wuruidong/Documents/ThreadPool/main.cpp",
+  "output": "CMakeFiles/ThreadPool.dir/main.cpp.o"
 },
 {
-  "directory": "C:/Users/user/Desktop/ThreadPool/build",
-  "command": "\"C:/Program Files/LLVM/bin/clang++.exe\"   -O0 -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -o CMakeFiles/ThreadPool.dir/ThreadPool.cpp.obj -c C:/Users/user/Desktop/ThreadPool/ThreadPool.cpp",
-  "file": "C:/Users/user/Desktop/ThreadPool/ThreadPool.cpp",
-  "output": "CMakeFiles/ThreadPool.dir/ThreadPool.cpp.obj"
+  "directory": "/Users/wuruidong/Documents/ThreadPool/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -o CMakeFiles/ThreadPool.dir/ThreadPool.cpp.o -c /Users/wuruidong/Documents/ThreadPool/ThreadPool.cpp",
+  "file": "/Users/wuruidong/Documents/ThreadPool/ThreadPool.cpp",
+  "output": "CMakeFiles/ThreadPool.dir/ThreadPool.cpp.o"
 }
 ]

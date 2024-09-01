@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "C:/Program Files/CMake/bin/cmake.exe"
+CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake
 
 # The command to remove a file.
-RM = "C:/Program Files/CMake/bin/cmake.exe" -E rm -f
+RM = /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:/Users/user/Desktop/ThreadPool
+CMAKE_SOURCE_DIR = /Users/wuruidong/Documents/ThreadPool
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:/Users/user/Desktop/ThreadPool/build
+CMAKE_BINARY_DIR = /Users/wuruidong/Documents/ThreadPool/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = C:/Users/user/Desktop/ThreadPool/build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	"C:/Program Files/CMake/bin/cmake-gui.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/homebrew/Cellar/cmake/3.30.2/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	"C:/Program Files/CMake/bin/cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/homebrew/Cellar/cmake/3.30.2/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/user/Desktop/ThreadPool/build/CMakeFiles C:/Users/user/Desktop/ThreadPool/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wuruidong/Documents/ThreadPool/build/CMakeFiles /Users/wuruidong/Documents/ThreadPool/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/user/Desktop/ThreadPool/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wuruidong/Documents/ThreadPool/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,13 +129,13 @@ ThreadPool/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreadPool.dir/build.make CMakeFiles/ThreadPool.dir/build
 .PHONY : ThreadPool/fast
 
-ThreadPool.obj: ThreadPool.cpp.obj
-.PHONY : ThreadPool.obj
+ThreadPool.o: ThreadPool.cpp.o
+.PHONY : ThreadPool.o
 
 # target to build an object file
-ThreadPool.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreadPool.dir/build.make CMakeFiles/ThreadPool.dir/ThreadPool.cpp.obj
-.PHONY : ThreadPool.cpp.obj
+ThreadPool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreadPool.dir/build.make CMakeFiles/ThreadPool.dir/ThreadPool.cpp.o
+.PHONY : ThreadPool.cpp.o
 
 ThreadPool.i: ThreadPool.cpp.i
 .PHONY : ThreadPool.i
@@ -153,13 +153,13 @@ ThreadPool.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreadPool.dir/build.make CMakeFiles/ThreadPool.dir/ThreadPool.cpp.s
 .PHONY : ThreadPool.cpp.s
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+main.o: main.cpp.o
+.PHONY : main.o
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreadPool.dir/build.make CMakeFiles/ThreadPool.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreadPool.dir/build.make CMakeFiles/ThreadPool.dir/main.cpp.o
+.PHONY : main.cpp.o
 
 main.i: main.cpp.i
 .PHONY : main.i
@@ -186,10 +186,10 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ThreadPool"
-	@echo "... ThreadPool.obj"
+	@echo "... ThreadPool.o"
 	@echo "... ThreadPool.i"
 	@echo "... ThreadPool.s"
-	@echo "... main.obj"
+	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 .PHONY : help

@@ -1,11 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ThreadPool.dir/ThreadPool.cpp.obj"
-  "CMakeFiles/ThreadPool.dir/ThreadPool.cpp.obj.d"
-  "CMakeFiles/ThreadPool.dir/main.cpp.obj"
-  "CMakeFiles/ThreadPool.dir/main.cpp.obj.d"
-  "ThreadPool.exe"
-  "ThreadPool.exe.manifest"
-  "ThreadPool.lib"
+  "CMakeFiles/ThreadPool.dir/ThreadPool.cpp.o"
+  "CMakeFiles/ThreadPool.dir/ThreadPool.cpp.o.d"
+  "CMakeFiles/ThreadPool.dir/main.cpp.o"
+  "CMakeFiles/ThreadPool.dir/main.cpp.o.d"
+  "ThreadPool"
   "ThreadPool.pdb"
 )
 

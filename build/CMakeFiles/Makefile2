@@ -45,19 +45,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "C:/Program Files/CMake/bin/cmake.exe"
+CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake
 
 # The command to remove a file.
-RM = "C:/Program Files/CMake/bin/cmake.exe" -E rm -f
+RM = /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:/Users/user/Desktop/ThreadPool
+CMAKE_SOURCE_DIR = /Users/wuruidong/Documents/ThreadPool
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:/Users/user/Desktop/ThreadPool/build
+CMAKE_BINARY_DIR = /Users/wuruidong/Documents/ThreadPool/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/ThreadPool.dir/clean
 CMakeFiles/ThreadPool.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreadPool.dir/build.make CMakeFiles/ThreadPool.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ThreadPool.dir/build.make CMakeFiles/ThreadPool.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:/Users/user/Desktop/ThreadPool/build/CMakeFiles --progress-num=1,2,3 "Built target ThreadPool"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/wuruidong/Documents/ThreadPool/build/CMakeFiles --progress-num=1,2,3 "Built target ThreadPool"
 .PHONY : CMakeFiles/ThreadPool.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ThreadPool.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/user/Desktop/ThreadPool/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wuruidong/Documents/ThreadPool/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ThreadPool.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/user/Desktop/ThreadPool/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wuruidong/Documents/ThreadPool/build/CMakeFiles 0
 .PHONY : CMakeFiles/ThreadPool.dir/rule
 
 # Convenience name for target.
