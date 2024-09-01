@@ -1,3 +1,0 @@
-/Users/wuruidong/Documents/ThreadPool/build/CMakeFiles/ThreadPool.dir
-/Users/wuruidong/Documents/ThreadPool/build/CMakeFiles/edit_cache.dir
-/Users/wuruidong/Documents/ThreadPool/build/CMakeFiles/rebuild_cache.dir
