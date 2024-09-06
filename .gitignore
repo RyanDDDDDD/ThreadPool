@@ -1,6 +1,7 @@
 ### C++ template
 
 build/*
+.vscode/*
 
 # Compiled Object files
 *.slo
