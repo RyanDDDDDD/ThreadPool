@@ -13,9 +13,10 @@
 #include <thread>
 #include <vector>
 
+#include "Singleton.h"
+
 class ThreadPool {
 public:
-    ThreadPool (uint32_t num);
     ~ThreadPool ();
 
     void start ();
@@ -24,6 +25,8 @@ public:
     void addTask (std::function<void ()> task);
 
 private:
+    friend class Singleton<ThreadPool>;
+    ThreadPool ();
     ThreadPool (const ThreadPool& other)            = delete;
     ThreadPool& operator= (const ThreadPool& other) = delete;
 

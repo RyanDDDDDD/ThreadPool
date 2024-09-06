@@ -5,9 +5,9 @@
 #include <iostream>
 #include "ThreadPool.h"
 
-ThreadPool::ThreadPool(uint32_t num)
-    :_num{std::max(num, std::thread::hardware_concurrency() + 1)}
-    ,_stop{true}
+ThreadPool::ThreadPool()
+    :_num{std::thread::hardware_concurrency() + 1},
+    _stop{true}
 {
 
 }

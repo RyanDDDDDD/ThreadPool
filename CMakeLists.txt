@@ -3,6 +3,10 @@ project(ThreadPool)
 
 set(CMAKE_CXX_STANDARD 20)
 
+
+
 add_executable(ThreadPool main.cpp
                 ThreadPool.h
-                ThreadPool.cpp)
+                ThreadPool.cpp
+                Singleton.h)
+
